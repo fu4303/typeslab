@@ -1,0 +1,52 @@
+:header {
+  traits {
+    colors: inverted;
+    type: logo;
+    layout: p1;
+    flex:;
+  }
+}
+
+:footer {
+  traits {
+    flex: wrap center;
+    colors: inverted;
+    type: footer;
+    layout: p1;
+  }
+}
+
+:main {
+  traits {
+    flex: wrap;
+    flex-child: grow;
+  }
+}
+
+:p {
+  traits {
+    layout: p0 .25 pr1 pl1;
+    type: centered;
+  }
+}
+
+:a {
+  traits {
+    link: inline;
+    type: unbroken;
+  }
+}
+
+:logo {
+  traits {
+    type: centered;
+  }
+
+  > span {
+    display: inline-block;
+    &::first-letter {
+      font-size: 1.4em;
+      vertical-align: text-top;
+    }
+  }
+}
